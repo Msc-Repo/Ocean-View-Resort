@@ -24,6 +24,8 @@ public class DashboardServlet extends HttpServlet {
 
         req.setAttribute("activeView", view);
         req.setAttribute("username", user.getUsername());
+        req.setAttribute("partialPath",
+                "/WEB-INF/views/dashboard/partials/" + view + ".jsp");
 
         req.getRequestDispatcher("/WEB-INF/views/dashboard/dashboard.jsp").forward(req, resp);
     }

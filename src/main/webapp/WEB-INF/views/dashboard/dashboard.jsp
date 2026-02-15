@@ -2,6 +2,7 @@
 <%
   String activeView = (String) request.getAttribute("activeView");
   if (activeView == null) activeView = "home";
+  String partial = (String) request.getAttribute("partialPath");
 %>
 <!DOCTYPE html>
 <html>
@@ -46,7 +47,8 @@
 
       <hr style="border:none;border-top:1px solid #eee;margin:14px 0;"/>
 
-      <jsp:include page="/WEB-INF/views/dashboard/partials/<%= activeView %>.jsp" />
+      <jsp:include page="<%= partial %>" />
+
     </div>
   </div>
 </div>
