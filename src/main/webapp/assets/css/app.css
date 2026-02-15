@@ -1,0 +1,11 @@
+body { font-family: Arial, sans-serif; margin:0; background:#fafafa; }
+.container { width: 380px; margin: 90px auto; background:#fff; border:1px solid #ddd; border-radius:14px; padding:20px; }
+input { width:100%; padding:10px; margin:8px 0; border:1px solid #bbb; border-radius:10px; box-sizing:border-box; }
+button { padding:10px 12px; border:1px solid #aaa; border-radius:10px; background:#f2f2f2; cursor:pointer; }
+.err { color:#b00020; font-weight:bold; }
+.layout { display:flex; height:100vh; }
+.sidebar { width:240px; background:#f2f2f2; padding:16px; }
+.content { flex:1; padding:20px; }
+.nav a { display:block; padding:10px; border-radius:10px; text-decoration:none; color:#333; margin:6px 0; }
+.nav a.active { background:#ddd; font-weight:bold; }
+.card { background:#fff; border:1px solid #ddd; border-radius:14px; padding:16px; }
